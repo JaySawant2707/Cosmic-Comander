@@ -16,7 +16,7 @@ public class JumpButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public void OnPointerDown(PointerEventData eventData)
     {
         if (canPress)
-        //PI.Jump();
+        PI.Jump();
 
         canPress = false;
     }

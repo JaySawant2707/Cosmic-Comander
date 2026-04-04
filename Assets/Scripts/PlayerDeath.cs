@@ -36,7 +36,7 @@ public class PlayerDeath : MonoBehaviour
 
     public void Death()
     {
-        rb.linearVelocity = new Vector2(0, 0);
+        rb.velocity = new Vector2(0, 0);
         animator.SetTrigger("Death");
         audioManager.PlaySFX(audioManager.Death);
         rb.simulated = false;

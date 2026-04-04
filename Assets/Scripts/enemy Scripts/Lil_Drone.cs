@@ -45,7 +45,7 @@ public class Lil_Drone : MonoBehaviour
         else if (!lost)
         {
             lost = true;
-            rb.linearVelocity = new Vector2(direction.x, direction.y).normalized * speed;
+            rb.velocity = new Vector2(direction.x, direction.y).normalized * speed;
             
         }
         if (lost) loseRange = distanceFromPlayer + 1f;

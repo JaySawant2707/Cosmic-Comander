@@ -8,7 +8,6 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
-  importerVersion: 2
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -78,14 +77,11 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
-    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
-    generateIndividualEvents: 1
-    generateSpriteAtlas: 1
   asepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
@@ -93,14 +89,11 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
-    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
-    generateIndividualEvents: 1
-    generateSpriteAtlas: 1
   importFileNodeState: 1
   platformSettingsDirtyTick: 0
   textureAssetName: 
@@ -110,7 +103,6 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 0
@@ -132,7 +124,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -153,7 +144,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -174,7 +164,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -195,7 +184,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -216,7 +204,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -237,7 +224,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -258,7 +244,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -279,7 +264,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -300,7 +284,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -321,7 +304,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -342,7 +324,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 204
@@ -363,7 +344,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 204
@@ -384,7 +364,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 204
@@ -405,7 +384,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 204
@@ -426,7 +404,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 204
@@ -447,7 +424,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 204
@@ -468,7 +444,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 204
@@ -489,7 +464,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 204
@@ -510,7 +484,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 204
@@ -531,7 +504,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 204
@@ -552,7 +524,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 404
@@ -573,7 +544,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 404
@@ -594,7 +564,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 404
@@ -615,7 +584,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 404
@@ -636,7 +604,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 404
@@ -657,7 +624,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 404
@@ -678,7 +644,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 404
@@ -699,7 +664,6 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 404
@@ -716,266 +680,232 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 404, y: 1404}
   spriteSheetImportData: []
-  tileSetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    uuid:
-      value0: 3637231015
-      value1: 0
-      value2: 0
-      value3: 0
-    guid: -657736281
+    guid: 871701499
     name: hot wheels flatten
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Frame_0
+    - name: hot wheels flatten_Frame_0
       frameIndex: 0
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: d9900e88a6e532d41a7b156df2b7a2ba
-    - name: Frame_1
+    - name: hot wheels flatten_Frame_1
       frameIndex: 1
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: e89dc1d095cc2c043b1c16ae72d31381
-    - name: Frame_2
+    - name: hot wheels flatten_Frame_2
       frameIndex: 2
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: 6ce7518956474554cb3e2be0a315d0b6
-    - name: Frame_3
+    - name: hot wheels flatten_Frame_3
       frameIndex: 3
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: b66e65f8c4fd55841b82c032bb905392
-    - name: Frame_4
+    - name: hot wheels flatten_Frame_4
       frameIndex: 4
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: c7a6ab0c657cc1745941ddf328ceb154
-    - name: Frame_5
+    - name: hot wheels flatten_Frame_5
       frameIndex: 5
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: 45b4899b0be568641989113f1aa09f01
-    - name: Frame_6
+    - name: hot wheels flatten_Frame_6
       frameIndex: 6
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: 53b68255b183e9e4789618d0df594902
-    - name: Frame_7
+    - name: hot wheels flatten_Frame_7
       frameIndex: 7
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: 5de2b165be88fa04b8404859dba77b23
-    - name: Frame_8
+    - name: hot wheels flatten_Frame_8
       frameIndex: 8
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: 161672bf11e8eba4e96c7f33185c5464
-    - name: Frame_9
+    - name: hot wheels flatten_Frame_9
       frameIndex: 9
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: 7c34bfcb361099b4c87cd3a3baa4aabd
-    - name: Frame_10
+    - name: hot wheels flatten_Frame_10
       frameIndex: 10
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: 8723b72a8034c8f4dbcd602d52793fb0
-    - name: Frame_11
+    - name: hot wheels flatten_Frame_11
       frameIndex: 11
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: 01aba6f5f32def54bb73a65d842b8abd
-    - name: Frame_12
+    - name: hot wheels flatten_Frame_12
       frameIndex: 12
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: d62a1e83b33b47c419b1f91c2b24fd6f
-    - name: Frame_13
+    - name: hot wheels flatten_Frame_13
       frameIndex: 13
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: f0bfe0c6bb373a646b35005262aa2b05
-    - name: Frame_14
+    - name: hot wheels flatten_Frame_14
       frameIndex: 14
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: c3910d1032b3cc246b986a679f274317
-    - name: Frame_15
+    - name: hot wheels flatten_Frame_15
       frameIndex: 15
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: d0cf147ff14cb6c40a2645b14c68c7dc
-    - name: Frame_16
+    - name: hot wheels flatten_Frame_16
       frameIndex: 16
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: dc85100dbb8df1047a3f0047c89d166e
-    - name: Frame_17
+    - name: hot wheels flatten_Frame_17
       frameIndex: 17
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: 6e57d4da79d16fc46a0268d8749e24e9
-    - name: Frame_18
+    - name: hot wheels flatten_Frame_18
       frameIndex: 18
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: 07cac3864c0fd374aa1ab85d9387e69a
-    - name: Frame_19
+    - name: hot wheels flatten_Frame_19
       frameIndex: 19
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: 6500b10e5763e6d4d8a22aa6ef946f07
-    - name: Frame_20
+    - name: hot wheels flatten_Frame_20
       frameIndex: 20
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: da472c6801783ba4ca84fa444919d1c0
-    - name: Frame_21
+    - name: hot wheels flatten_Frame_21
       frameIndex: 21
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: f2ac9ad55e9efb64395d35144847641c
-    - name: Frame_22
+    - name: hot wheels flatten_Frame_22
       frameIndex: 22
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: 1cd28d5d3d3df2e41894266931c487fd
-    - name: Frame_23
+    - name: hot wheels flatten_Frame_23
       frameIndex: 23
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: 4264e1c0aaeaea840abab2f99fb2176e
-    - name: Frame_24
+    - name: hot wheels flatten_Frame_24
       frameIndex: 24
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: 5d17bbd71c2213342a59b358cb1bd4fc
-    - name: Frame_25
+    - name: hot wheels flatten_Frame_25
       frameIndex: 25
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: 0aa95b2a913e14647b18e844940ca8ac
-    - name: Frame_26
+    - name: hot wheels flatten_Frame_26
       frameIndex: 26
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
       spriteId: d3562e11e8cb23b40892daebc316e158
-    - name: Frame_27
+    - name: hot wheels flatten_Frame_27
       frameIndex: 27
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
@@ -983,13 +913,8 @@ ScriptedImporter:
         height: 192
       spriteId: 5a9d502a8ad67574f8a0c4d7f64b4f56
     linkedCells: []
-    tileCells: []
-    tileSetIndex: 0
     parentIndex: -1
-  tileSets: []
   platformSettings: []
-  generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 192, y: 192}
-  previousTextureSize: {x: 1024, y: 2048}

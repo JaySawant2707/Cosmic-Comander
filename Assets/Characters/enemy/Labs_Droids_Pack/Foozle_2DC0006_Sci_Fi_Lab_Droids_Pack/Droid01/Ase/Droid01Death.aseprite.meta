@@ -8,7 +8,6 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
-  importerVersion: 2
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -78,14 +77,11 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
-    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
-    generateIndividualEvents: 1
-    generateSpriteAtlas: 1
   asepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
@@ -93,14 +89,11 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
-    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
-    generateIndividualEvents: 1
-    generateSpriteAtlas: 1
   importFileNodeState: 1
   platformSettingsDirtyTick: 638404989211658653
   textureAssetName: 
@@ -110,7 +103,6 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 0
@@ -129,10 +121,9 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Droid01Death_Frame_0
     originalName: 
-    pivot: {x: 0.5, y: -0.07692308}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -150,10 +141,9 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Droid01Death_Frame_1
     originalName: 
-    pivot: {x: 0.5, y: -0.125}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 42
@@ -171,10 +161,9 @@ ScriptedImporter:
     uvTransform: {x: 42, y: 4}
   - name: Droid01Death_Frame_2
     originalName: 
-    pivot: {x: 0.5, y: -0.125}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -192,10 +181,9 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 38}
   - name: Droid01Death_Frame_3
     originalName: 
-    pivot: {x: 0.5, y: -0.125}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -213,10 +201,9 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 70}
   - name: Droid01Death_Frame_4
     originalName: 
-    pivot: {x: 0.48, y: -0.18181819}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 36
@@ -234,10 +221,9 @@ ScriptedImporter:
     uvTransform: {x: 36, y: 70}
   - name: Droid01Death_Frame_5
     originalName: 
-    pivot: {x: 0.5, y: -0.16666667}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 80
@@ -255,10 +241,9 @@ ScriptedImporter:
     uvTransform: {x: 80, y: 4}
   - name: Droid01Death_Frame_6
     originalName: 
-    pivot: {x: 0.5, y: -0.22727273}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 38
@@ -276,10 +261,9 @@ ScriptedImporter:
     uvTransform: {x: 38, y: 38}
   - name: Droid01Death_Frame_7
     originalName: 
-    pivot: {x: 0.48, y: -0.16666667}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
     rect:
       serializedVersion: 2
       x: 74
@@ -296,86 +280,72 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 74, y: 38}
   spriteSheetImportData: []
-  tileSetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    uuid:
-      value0: 17382265
-      value1: 0
-      value2: 0
-      value3: 0
-    guid: 17382265
+    guid: -1689175387
     name: Droid01Death
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Frame_0
+    - name: Droid01Death_Frame_0
       frameIndex: 0
-      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 30
         height: 26
       spriteId: b1bf70944abe0174c80f5244a3cffcc9
-    - name: Frame_1
+    - name: Droid01Death_Frame_1
       frameIndex: 1
-      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 3
         width: 30
         height: 24
       spriteId: 303a0981290949a4ebde3e91e42e913f
-    - name: Frame_2
+    - name: Droid01Death_Frame_2
       frameIndex: 2
-      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 3
         width: 26
         height: 24
       spriteId: f42ad508a88630a4faea41d71457402b
-    - name: Frame_3
+    - name: Droid01Death_Frame_3
       frameIndex: 3
-      additiveSortOrder: 0
       cellRect:
         x: 4
         y: 3
         width: 24
         height: 24
       spriteId: 2de780538fc97c244bd26cbb03705611
-    - name: Frame_4
+    - name: Droid01Death_Frame_4
       frameIndex: 4
-      additiveSortOrder: 0
       cellRect:
         x: 4
         y: 4
         width: 25
         height: 22
       spriteId: dd9e2b6cb7db112419c3f229d42b1567
-    - name: Frame_5
+    - name: Droid01Death_Frame_5
       frameIndex: 5
-      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 4
         width: 28
         height: 24
       spriteId: 290c79ea817af5e458a4e9bd268a6b42
-    - name: Frame_6
+    - name: Droid01Death_Frame_6
       frameIndex: 6
-      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 5
         width: 28
         height: 22
       spriteId: 993c75eb69fca1741b0fab85dc309cdb
-    - name: Frame_7
+    - name: Droid01Death_Frame_7
       frameIndex: 7
-      additiveSortOrder: 0
       cellRect:
         x: 4
         y: 4
@@ -383,10 +353,7 @@ ScriptedImporter:
         height: 24
       spriteId: 7b88f731c2129d141b8b85254e94e6cd
     linkedCells: []
-    tileCells: []
-    tileSetIndex: 0
     parentIndex: -1
-  tileSets: []
   platformSettings:
   - name: DefaultTexturePlatform
     overridden: 0
@@ -448,8 +415,6 @@ ScriptedImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
-  generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 32, y: 32}
-  previousTextureSize: {x: 128, y: 128}
