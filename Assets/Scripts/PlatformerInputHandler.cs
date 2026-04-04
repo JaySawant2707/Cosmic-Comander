@@ -59,7 +59,7 @@ public class PlatformerInputHandler : MonoBehaviour
 
     private void OnJump(InputAction.CallbackContext context)
     {
-        if (context.started || context.performed)
+        if (context.ReadValueAsButton())
         {
             lastJumpPressedTime = Time.time;
         }
