@@ -133,9 +133,9 @@ public class Player_Input : MonoBehaviour
     private void ApplyHorizontalMovement()
     {
         float moveInput = inputHandler != null ? inputHandler.Move.x : 0f;
-        Vector2 velocity = rb.velocity;
+        Vector2 velocity = rb.linearVelocity;
         velocity.x = moveInput * moveSpeed;
-        rb.velocity = velocity;
+        rb.linearVelocity = velocity;
     }
 
     private void HandleJump()
@@ -150,9 +150,9 @@ public class Player_Input : MonoBehaviour
 
         if (hasBufferedJump && canUseCoyote)
         {
-            Vector2 velocity = rb.velocity;
+            Vector2 velocity = rb.linearVelocity;
             velocity.y = jumpVelocity;
-            rb.velocity = velocity;
+            rb.linearVelocity = velocity;
 
             isGrounded = false;
             coyoteTimer = 0f;
