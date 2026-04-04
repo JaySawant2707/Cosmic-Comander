@@ -1,144 +1,180 @@
-using System.Collections;
-using System.Collections.Generic;
-
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Animator))]
 public class Player_Input : MonoBehaviour
 {
-    AudioManager audioManager;
+    private const float GroundedRadius = 0.182f;
 
-    [SerializeField] public float speed;
-    [SerializeField] public float jumpForce;
-    [SerializeField] public float jumpForceKeyB;
+    private AudioManager audioManager;
+    private PlatformerInputHandler inputHandler;
+    private Rigidbody2D rb;
+    private Collider2D playerCollider;
+    private Animator anim;
 
-    [SerializeField] public float CayoteTime = 0.3f;
-    [SerializeField] private Transform m_GroundCheck;
-    [SerializeField] private LayerMask m_WhatIsGround;
+    [Header("Movement")]
+    [FormerlySerializedAs("speed")]
+    [SerializeField] private float moveSpeed = 8f;
+    [FormerlySerializedAs("jumpForce")]
+    [FormerlySerializedAs("jumpForceKeyB")]
+    [SerializeField] private float jumpVelocity = 12f;
 
-    public Rigidbody2D rb;
-    public Animator anim;
-    public bool FacingRight = true;
+    [Header("Jump Feel")]
+    [FormerlySerializedAs("CayoteTime")]
+    [SerializeField] private float coyoteTime = 0.12f;
+    [SerializeField] private float jumpBufferTime = 0.12f;
 
-    [SerializeField] private bool m_Grounded;
-    const float k_GroundedRadius = .182f;
+    [Header("Ground Check")]
+    [FormerlySerializedAs("m_GroundCheck")]
+    [SerializeField] private Transform groundCheck;
+    [FormerlySerializedAs("m_WhatIsGround")]
+    [SerializeField] private LayerMask whatIsGround;
 
+    [Header("State")]
+    [FormerlySerializedAs("m_Grounded")]
+    [SerializeField] private bool isGrounded;
+    [FormerlySerializedAs("FacingRight")]
+    [SerializeField] private bool facingRight = true;
 
     [Header("Events")]
-    [Space]
-
     public UnityEvent OnLandEvent;
 
-    [System.Serializable]
-    public class BoolEvent : UnityEvent<bool> { }
-
+    private float coyoteTimer;
 
     private void Awake()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        inputHandler = GetComponent<PlatformerInputHandler>();
         rb = GetComponent<Rigidbody2D>();
-        anim = gameObject.GetComponent<Animator>();
-        anim.enabled = true;
+        playerCollider = GetComponent<Collider2D>();
+        anim = GetComponent<Animator>();
 
         if (OnLandEvent == null)
+        {
             OnLandEvent = new UnityEvent();
+        }
 
-        audioManager.Music.clip = audioManager.Lvbackground;
-        audioManager.Music.Play();
-
+        if (audioManager != null)
+        {
+            audioManager.Music.clip = audioManager.Lvbackground;
+            audioManager.Music.Play();
+        }
     }
 
     private void FixedUpdate()
     {
-        bool wasGrounded = m_Grounded;
-        m_Grounded = false;
+        UpdateGroundedState();
+        ApplyHorizontalMovement();
+        HandleJump();
+    }
 
-        // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
-        // This can be done using layers instead but Sample Assets will not overwrite your project settings.
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
+    private void Update()
+    {
+        float moveInput = inputHandler != null ? inputHandler.Move.x : 0f;
 
-        for (int i = 0; i < colliders.Length; i++)
+        anim.SetFloat("Speed", Mathf.Abs(moveInput));
+        anim.SetBool("IsJumping", !isGrounded);
+
+        if (moveInput > 0.01f && !facingRight)
         {
-            if (colliders[i].gameObject != gameObject)
-            {
-                m_Grounded = true;
-                if (!wasGrounded)
-                    OnLandEvent.Invoke();
-            }
+            Flip();
+        }
+        else if (moveInput < -0.01f && facingRight)
+        {
+            Flip();
         }
     }
 
-
-    // Update is called once per frame
-    void Update()
+    private void UpdateGroundedState()
     {
-        float movX = SimpleInput.GetAxisRaw("Horizontal");
+        bool wasGrounded = isGrounded;
+        isGrounded = IsGroundedNow();
 
-        anim.SetFloat("Speed", Mathf.Abs(movX));
-
-        rb.velocity = new Vector2(movX * speed, rb.velocity.y);
-
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
+        if (isGrounded)
         {
-            if (m_Grounded)
+            coyoteTimer = coyoteTime;
+            if (!wasGrounded)
             {
-                anim.SetBool("IsJumping", true);
-                rb.AddForce(Vector2.up * jumpForceKeyB);
+                OnLandEvent.Invoke();
             }
-        }
-
-        if (!m_Grounded)
-        {
-            anim.SetBool("IsJumping", true);
         }
         else
         {
-            anim.SetBool("IsJumping", false);
+            coyoteTimer -= Time.fixedDeltaTime;
         }
-
-        // If the input is moving the player right and the player is facing left...
-        if (movX > 0 && !FacingRight)
-        {
-            // ... flip the player.
-            Flip();
-        }
-        // Otherwise if the input is moving the player left and the player is facing right...
-        else if (movX < 0 && FacingRight)
-        {
-            // ... flip the player.
-            Flip();
-        }
-
     }
 
-    public void Jump()
+    private bool IsGroundedNow()
     {
-
-        if (m_Grounded)
+        if (groundCheck != null)
         {
-            m_Grounded = false;
+            Collider2D[] hits = Physics2D.OverlapCircleAll(groundCheck.position, GroundedRadius, whatIsGround);
+            for (int i = 0; i < hits.Length; i++)
+            {
+                if (hits[i] != null && hits[i].gameObject != gameObject)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        if (playerCollider != null)
+        {
+            return playerCollider.IsTouchingLayers(whatIsGround);
+        }
+
+        return false;
+    }
+
+    private void ApplyHorizontalMovement()
+    {
+        float moveInput = inputHandler != null ? inputHandler.Move.x : 0f;
+        Vector2 velocity = rb.velocity;
+        velocity.x = moveInput * moveSpeed;
+        rb.velocity = velocity;
+    }
+
+    private void HandleJump()
+    {
+        if (inputHandler == null)
+        {
+            return;
+        }
+
+        bool hasBufferedJump = inputHandler.HasBufferedJump(jumpBufferTime);
+        bool canUseCoyote = coyoteTimer > 0f;
+
+        if (hasBufferedJump && canUseCoyote)
+        {
+            Vector2 velocity = rb.velocity;
+            velocity.y = jumpVelocity;
+            rb.velocity = velocity;
+
+            isGrounded = false;
+            coyoteTimer = 0f;
+            inputHandler.ConsumeBufferedJump();
             anim.SetBool("IsJumping", true);
-            rb.AddForce(Vector2.up * jumpForce);
         }
-
-    }
-
-    public void OnLanding()
-    {
-        anim.SetBool("IsJumping", false);
-
     }
 
     private void Flip()
     {
-        // Switch the way the player is labelled as facing.
-        FacingRight = !FacingRight;
-
+        facingRight = !facingRight;
         transform.Rotate(0f, 180f, 0f);
     }
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
-        Gizmos.DrawWireSphere(m_GroundCheck.position, k_GroundedRadius);
+        if (groundCheck == null)
+        {
+            return;
+        }
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(groundCheck.position, GroundedRadius);
     }
 }
