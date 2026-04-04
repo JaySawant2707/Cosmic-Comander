@@ -29,13 +29,11 @@ public class PlayerAnimationController : MonoBehaviour
 
     void UpdateAirState()
     {
-
-
         animator.SetBool("IsGrounded", controller.IsGrounded);
 
         if (!controller.IsGrounded && rb.linearVelocity.y > 0.1f)
         {
-            animator.Play("Jump");
+            PlayJump();
         }
         else if (!controller.IsGrounded && rb.linearVelocity.y < -0.1f)
         {
@@ -44,9 +42,41 @@ public class PlayerAnimationController : MonoBehaviour
     }
 
     // Called from other scripts
-    public void PlayJump() => animator.SetTrigger("Jump");
-    public void PlaySlash() => animator.SetTrigger("Slash");
-    public void PlayShoot() => animator.SetTrigger("Shoot");
-    public void PlayDeath() => animator.SetTrigger("Death");
-    public void PlayRespawn() => animator.SetTrigger("Respawned");
+    public void PlayJump()
+    {
+        animator.SetTrigger("Jump");
+    }
+    public void PlaySlash()
+    {
+        animator.SetTrigger("Slash");
+    }
+    public void PlayShoot()
+    {
+        animator.SetTrigger("Shoot");
+    }
+    public void PlayHurt()
+    {
+        ResetAllTriggers();
+        animator.SetTrigger("Hurt");
+    }
+    public void PlayDeath()
+    {
+        ResetAllTriggers();
+        animator.SetTrigger("Death");
+    }
+    public void PlayRespawn()
+    {
+        ResetAllTriggers();
+        animator.SetTrigger("Respawned");
+    }
+
+    void ResetAllTriggers()
+    {
+        animator.ResetTrigger("Jump");
+        animator.ResetTrigger("Slash");
+        animator.ResetTrigger("Shoot");
+        animator.ResetTrigger("Hurt");
+        animator.ResetTrigger("Death");
+        animator.ResetTrigger("Respawned");
+    }
 }

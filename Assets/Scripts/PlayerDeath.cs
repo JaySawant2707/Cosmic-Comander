@@ -1,19 +1,33 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
 {
     [SerializeField] AudioManager audioManager;
+    [SerializeField] float beforeRespawnCooldown = 0.5f;
     PlayerAnimationController anim;
+    PlayerController playerController;
+    PlayerHealth playerHealth;
+    PlayerInputHandler playerInputHandler;
     Rigidbody2D rb;
     Vector2 checkPointPos;
+    bool isAlive = true;
+    public bool IsAlive => isAlive;
 
     private void Start()
     {
         anim = GetComponent<PlayerAnimationController>();
         rb = GetComponent<Rigidbody2D>();
+        playerHealth = GetComponent<PlayerHealth>();
+        playerController = GetComponent<PlayerController>();
+        playerInputHandler = GetComponent<PlayerInputHandler>();
         checkPointPos = transform.position;
+        isAlive = true;
+    }
+
+    void Update()
+    {
+        if(!isAlive) rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -31,21 +45,31 @@ public class PlayerDeath : MonoBehaviour
 
     public void Death()
     {
-        rb.linearVelocity = new Vector2(0, 0);
+        isAlive = false;
         anim.PlayDeath();
         audioManager.PlaySFX(audioManager.Death);
-        rb.simulated = false;
+        playerController.enabled = false;
+        playerInputHandler.enabled = false;
 
         StartCoroutine(Die());
     }
 
     IEnumerator Die()
     {
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(beforeRespawnCooldown);
 
+        Respawn();
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    private void Respawn()
+    {
+        isAlive = true;
+        playerController.enabled = true;
+        playerInputHandler.enabled = true;
+        playerHealth.ResetHealth();
         transform.position = checkPointPos;
         anim.PlayRespawn();
         rb.simulated = true;
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

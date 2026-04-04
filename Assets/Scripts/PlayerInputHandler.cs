@@ -32,5 +32,8 @@ public class PlayerInputHandler : MonoBehaviour
     {
         if (context.started)
             ShootPressed = true;
+
+        if (context.canceled)
+            ShootPressed = false;
     }
 }
