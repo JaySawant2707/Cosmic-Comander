@@ -4,41 +4,46 @@ using UnityEngine;
 
 public class PlayerCombat : MonoBehaviour
 {
-    public Animator animator;
+    [SerializeField] AudioManager audioManager;
+    [SerializeField] Transform attackPoint;
+    [SerializeField] Transform firePoint;
 
-    public Transform attackPoint;
-    public Transform firePoint;
-    
-    public LayerMask enemyLayer;
+    [SerializeField] LayerMask enemyLayer;
 
-    public int SlashDamage = 20;
-    public float attackRange = 0.05f;
+    [SerializeField] int SlashDamage = 20;
+    [SerializeField] float attackRange = 0.05f;
 
-    public float attackRate = 2f;
+    [SerializeField] float attackRate = 2f;
     float nextAttackTime = 0f;
 
-    public float ShootRate = 2f;
+    [SerializeField] float ShootRate = 2f;
     float nextShootTime = 0f;
 
-    public int ShootDamage = 20;
-    public LineRenderer lineRenderer;
-    AudioManager audioManager;
+    [SerializeField] int ShootDamage = 20;
+    [SerializeField] LineRenderer lineRenderer;
+    
+    PlayerInputHandler input;
+    PlayerAnimationController anim;
 
     private void Start()
     {
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        anim = GetComponent<PlayerAnimationController>();
+        input = GetComponent<PlayerInputHandler>();
     }
-    // Update is called once per frame
+
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J))
+        if (input.AttackPressed)
         {
             Slash();
+            input.AttackPressed = false; // reset
         }
-        
-        if (Input.GetKeyDown(KeyCode.K))
-        {           
+
+        if (input.ShootPressed)
+        {
             ShootRay();
+            input.ShootPressed = false; // reset
         }
     }
 
@@ -48,7 +53,7 @@ public class PlayerCombat : MonoBehaviour
         {
             nextAttackTime = Time.time + 1f / attackRate;
 
-            animator.SetTrigger("Slash");
+            anim.PlaySlash();
             audioManager.PlaySFX(audioManager.Slash);
 
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
@@ -78,7 +83,7 @@ public class PlayerCombat : MonoBehaviour
 
     IEnumerator Shoot()
     {
-        animator.SetTrigger("Shoot");
+        anim.PlayShoot();
         audioManager.PlaySFX(audioManager.laserShoot);
 
         yield return new WaitForSeconds(0.5f);

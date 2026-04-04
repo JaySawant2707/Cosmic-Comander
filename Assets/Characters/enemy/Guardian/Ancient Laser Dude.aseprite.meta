@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 2
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -77,11 +78,14 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
+    generateIndividualEvents: 1
+    generateSpriteAtlas: 1
   asepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
@@ -89,11 +93,14 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
+    generateIndividualEvents: 1
+    generateSpriteAtlas: 1
   importFileNodeState: 1
   platformSettingsDirtyTick: 0
   textureAssetName: 
@@ -103,6 +110,7 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 0
@@ -124,6 +132,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -144,6 +153,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -164,6 +174,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -184,6 +195,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -204,6 +216,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -224,6 +237,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -244,6 +258,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -264,6 +279,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -284,6 +300,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -304,6 +321,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -324,6 +342,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -344,6 +363,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -364,6 +384,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -384,6 +405,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -404,6 +426,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -424,6 +447,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -444,6 +468,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -464,6 +489,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -484,6 +510,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 157
@@ -504,6 +531,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 157
@@ -524,6 +552,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 157
@@ -544,6 +573,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 157
@@ -564,6 +594,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 157
@@ -584,6 +615,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 157
@@ -604,6 +636,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 157
@@ -624,6 +657,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 157
@@ -644,6 +678,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 157
@@ -664,6 +699,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 157
@@ -684,6 +720,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 157
@@ -704,6 +741,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 157
@@ -724,6 +762,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 157
@@ -744,6 +783,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 157
@@ -764,6 +804,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 157
@@ -784,6 +825,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 157
@@ -804,6 +846,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 157
@@ -824,6 +867,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 157
@@ -844,6 +888,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 310
@@ -864,6 +909,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 310
@@ -884,6 +930,7 @@ ScriptedImporter:
     pivot: {x: 0.4413793, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 310
@@ -900,320 +947,365 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 310, y: 116}
   spriteSheetImportData: []
+  tileSetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -2032370825
+    uuid:
+      value0: 611538451
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 611538451
     name: Ancient Laser Dude
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Ancient Laser Dude_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: 5c5074e7e6cb6ef479498df82a309ed2
-    - name: Ancient Laser Dude_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: 362b2c589d5d02946b9d23c73f575194
-    - name: Ancient Laser Dude_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: 90ec03d52e26a254ba0dab2b5cb1ecad
-    - name: Ancient Laser Dude_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: c9656aad8843b3a46b5eac76dcab5671
-    - name: Ancient Laser Dude_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: 52d547db198399440af4506c9c6daac6
-    - name: Ancient Laser Dude_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: 9e719d7820a2cfb45812a1a20998c3fd
-    - name: Ancient Laser Dude_Frame_6
+    - name: Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: 6795ae6aef217c44088973a87a921627
-    - name: Ancient Laser Dude_Frame_7
+    - name: Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: 19c4da79a69072a40bdf590dfde81145
-    - name: Ancient Laser Dude_Frame_8
+    - name: Frame_8
       frameIndex: 8
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: 27486ca78cd5f6945a4925f100e2ad82
-    - name: Ancient Laser Dude_Frame_9
+    - name: Frame_9
       frameIndex: 9
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: 055904be28b58824da019b55d0b912c8
-    - name: Ancient Laser Dude_Frame_10
+    - name: Frame_10
       frameIndex: 10
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: 5d4eea20802097d41a1ca5350504c1b3
-    - name: Ancient Laser Dude_Frame_11
+    - name: Frame_11
       frameIndex: 11
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: 8618ee349a3fea1419ba53753ff9f745
-    - name: Ancient Laser Dude_Frame_12
+    - name: Frame_12
       frameIndex: 12
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: d8c1f79c8764d9642a1f33a1e9579431
-    - name: Ancient Laser Dude_Frame_13
+    - name: Frame_13
       frameIndex: 13
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: e71ee000ad55b59459d9eb26300237cf
-    - name: Ancient Laser Dude_Frame_14
+    - name: Frame_14
       frameIndex: 14
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: 963854e88dc3cf649b23dca43a3fbba6
-    - name: Ancient Laser Dude_Frame_15
+    - name: Frame_15
       frameIndex: 15
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: 786c810ab77836544ae0636212771b1f
-    - name: Ancient Laser Dude_Frame_16
+    - name: Frame_16
       frameIndex: 16
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: 614e6fe6cafb1ee4fbc5be0e439edbaa
-    - name: Ancient Laser Dude_Frame_17
+    - name: Frame_17
       frameIndex: 17
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: be2ac2f3f8801f9479fe2b3b0f727211
-    - name: Ancient Laser Dude_Frame_18
+    - name: Frame_18
       frameIndex: 18
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: f7e53afdef84d184eb0b441a62cf9a95
-    - name: Ancient Laser Dude_Frame_19
+    - name: Frame_19
       frameIndex: 19
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: e6983149cda33654e820cbaca84b41ef
-    - name: Ancient Laser Dude_Frame_20
+    - name: Frame_20
       frameIndex: 20
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: 35727426bc96f0b48a5e9a239339ebdd
-    - name: Ancient Laser Dude_Frame_21
+    - name: Frame_21
       frameIndex: 21
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: 4a2c0e24cbfbe524184748820273773e
-    - name: Ancient Laser Dude_Frame_22
+    - name: Frame_22
       frameIndex: 22
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: 282887f3e0c000c4e806e4bea379bb4e
-    - name: Ancient Laser Dude_Frame_23
+    - name: Frame_23
       frameIndex: 23
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: ce2650f3764b5c44ba7847dac7a44b4b
-    - name: Ancient Laser Dude_Frame_24
+    - name: Frame_24
       frameIndex: 24
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: 6e79bb19b9f038c418d227c3948c8511
-    - name: Ancient Laser Dude_Frame_25
+    - name: Frame_25
       frameIndex: 25
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: a88387bb25fd02349a2f8bd600171c77
-    - name: Ancient Laser Dude_Frame_26
+    - name: Frame_26
       frameIndex: 26
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: f8ff75d262aa48e498105b362e44300a
-    - name: Ancient Laser Dude_Frame_27
+    - name: Frame_27
       frameIndex: 27
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: 44ac7aa20e8339144b24d773917cfdab
-    - name: Ancient Laser Dude_Frame_28
+    - name: Frame_28
       frameIndex: 28
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: a22d1cb5fea8d8c46a10265c9919655b
-    - name: Ancient Laser Dude_Frame_29
+    - name: Frame_29
       frameIndex: 29
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: 53f57dcc86e66264390124b10bdb6ae6
-    - name: Ancient Laser Dude_Frame_30
+    - name: Frame_30
       frameIndex: 30
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: a957fe71aa6be8645a3901cae164bb35
-    - name: Ancient Laser Dude_Frame_31
+    - name: Frame_31
       frameIndex: 31
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: a11220e31557f464fb9d0e45c5c4073b
-    - name: Ancient Laser Dude_Frame_32
+    - name: Frame_32
       frameIndex: 32
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: 6726c427d96a65f48a853e97fa15ec94
-    - name: Ancient Laser Dude_Frame_33
+    - name: Frame_33
       frameIndex: 33
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: f712b89131a0c6a4192cf29c8ff4266f
-    - name: Ancient Laser Dude_Frame_34
+    - name: Frame_34
       frameIndex: 34
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: 25cb07eea8445eb4e90c321993c05993
-    - name: Ancient Laser Dude_Frame_35
+    - name: Frame_35
       frameIndex: 35
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: 9d46327c8afe02e4ba6de404ec87d485
-    - name: Ancient Laser Dude_Frame_36
+    - name: Frame_36
       frameIndex: 36
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: 3e6be1102b7977a439591b9f22dc01df
-    - name: Ancient Laser Dude_Frame_37
+    - name: Frame_37
       frameIndex: 37
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 145
         height: 48
       spriteId: 7cebc275aad89414fa1eb14d78e773f2
-    - name: Ancient Laser Dude_Frame_38
+    - name: Frame_38
       frameIndex: 38
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
@@ -1221,8 +1313,13 @@ ScriptedImporter:
         height: 48
       spriteId: e5874854caa31874facf004c93a4693b
     linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
     parentIndex: -1
+  tileSets: []
   platformSettings: []
+  generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 128, y: 48}
+  previousTextureSize: {x: 512, y: 1024}

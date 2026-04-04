@@ -4,17 +4,16 @@ using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
 {
-    public Animator animator;
-    AudioManager audioManager;
-    private Vector2 checkPointPos;
+    [SerializeField] AudioManager audioManager;
+    PlayerAnimationController anim;
     Rigidbody2D rb;
-
+    Vector2 checkPointPos;
 
     private void Start()
     {
-        checkPointPos = transform.position;
+        anim = GetComponent<PlayerAnimationController>();
         rb = GetComponent<Rigidbody2D>();
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        checkPointPos = transform.position;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -28,16 +27,12 @@ public class PlayerDeath : MonoBehaviour
     public void UpdateCheckpoint(Vector2 newCheckPoint)
     {
         checkPointPos = newCheckPoint;
-
     }
-
-
-
 
     public void Death()
     {
-        rb.velocity = new Vector2(0, 0);
-        animator.SetTrigger("Death");
+        rb.linearVelocity = new Vector2(0, 0);
+        anim.PlayDeath();
         audioManager.PlaySFX(audioManager.Death);
         rb.simulated = false;
 
@@ -49,9 +44,8 @@ public class PlayerDeath : MonoBehaviour
         yield return new WaitForSeconds(0.4f);
 
         transform.position = checkPointPos;
-        animator.SetTrigger("Respawned");
+        anim.PlayRespawn();
         rb.simulated = true;
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-
     }
 }
