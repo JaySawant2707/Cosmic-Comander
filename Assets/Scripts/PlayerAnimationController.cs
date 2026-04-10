@@ -31,17 +31,17 @@ public class PlayerAnimationController : MonoBehaviour
     {
         animator.SetBool("IsGrounded", controller.IsGrounded);
 
-        if (!controller.IsGrounded && rb.linearVelocity.y > 0.1f)
+        if (!controller.IsGrounded)
         {
             PlayJump();
-        }
-        else if (!controller.IsGrounded && rb.linearVelocity.y < -0.1f)
-        {
-            //animator.Play("Fall");
         }
     }
 
     // Called from other scripts
+    public void PlayShoot(bool state)
+    {
+        animator.SetBool("IsShooting", state);
+    }
     public void PlayJump()
     {
         animator.SetTrigger("Jump");

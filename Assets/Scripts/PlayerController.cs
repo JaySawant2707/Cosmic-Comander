@@ -4,6 +4,7 @@ public class PlayerController : MonoBehaviour
 {
     [Header("Movement")]
     [SerializeField] float speed = 5f;
+    Vector2 platformVelocity;
 
     [Header("Ground Check")]
     [SerializeField] Transform groundCheck;
@@ -68,7 +69,15 @@ public class PlayerController : MonoBehaviour
 
     void Move(float input)
     {
-        rb.linearVelocity = new Vector2(input * speed, rb.linearVelocity.y);
+        rb.linearVelocity = new Vector2(
+            input * speed + platformVelocity.x,
+            rb.linearVelocity.y
+        );
+    }
+
+    public void SetPlatformVelocity(Vector2 velocity)
+    {
+        platformVelocity = velocity;
     }
 
     void HandleTimers()

@@ -9,6 +9,7 @@ public class PlayerCombat : MonoBehaviour
     [Header("Shooting")]
     [SerializeField] float fireRate = 5f; // bullets per second
     private float fireTimer;
+    bool isShooting;
 
     [Header("Audio")]
     [SerializeField] AudioManager audioManager;
@@ -29,13 +30,17 @@ public class PlayerCombat : MonoBehaviour
     void Update()
     {
         if (playerDeath.IsAlive)
+        {
             HandleShooting();
+            if (anim) anim.PlayShoot(isShooting);
+        }
     }
 
     void HandleShooting()
     {
         if (input.ShootPressed)
         {
+            isShooting = true;
             fireTimer -= Time.deltaTime;
 
             if (fireTimer <= 0f)
@@ -46,6 +51,7 @@ public class PlayerCombat : MonoBehaviour
         }
         else
         {
+            isShooting = false;
             fireTimer = 0f; // reset for responsive shooting
         }
     }
@@ -56,10 +62,8 @@ public class PlayerCombat : MonoBehaviour
 
         int direction = controller.FacingDirection;
 
-        bullet.GetComponent<Bullet>().Initialize(direction);
+        bullet.GetComponent<Bullet>().Initialize(direction, gameObject);
 
-        if (anim != null)
-            anim.PlayShoot();
 
         if (audioManager != null)
             audioManager.PlaySFX(audioManager.laserShoot);

@@ -4,14 +4,17 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 15f;
     public float lifeTime = 3f;
+    [Header("VFX")]
+    [SerializeField] GameObject explosionPrefab;
 
     private int direction = 1;
+    private GameObject owner;
 
-    public void Initialize(int dir)
+    public void Initialize(int dir, GameObject ownerObj)
     {
         direction = dir;
+        owner = ownerObj;
 
-        // Flip bullet sprite if needed
         Vector3 scale = transform.localScale;
         scale.x = Mathf.Abs(scale.x) * dir;
         transform.localScale = scale;
@@ -29,9 +32,18 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        var damageable = collision.GetComponent<IDamageable>();
+        // Ignore self (owner)
+        if (collision.gameObject == owner)
+            return;
 
+        var damageable = collision.GetComponent<IDamageable>();
         damageable?.TakeDamage(1);
+
+        // Spawn explosion
+        if (explosionPrefab != null)
+        {
+            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+        }
 
         Destroy(gameObject);
     }

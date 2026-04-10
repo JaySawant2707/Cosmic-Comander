@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 {
     [SerializeField] int maxHealth = 3;
     [SerializeField] float invincibleTime = 1f;
+    [SerializeField] float knockbackForce = 5f;
 
     PlayerAnimationController anim;
     PlayerDeath playerDeath;
@@ -30,7 +31,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         anim.PlayHurt();
 
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        rb.linearVelocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 5f, 5f);
+        rb.linearVelocity = new Vector2(-Mathf.Sign(transform.localScale.x) * knockbackForce, knockbackForce);
 
         if (currentHealth <= 0)
         {
