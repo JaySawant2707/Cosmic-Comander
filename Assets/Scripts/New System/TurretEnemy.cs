@@ -1,24 +1,37 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public class TurretEnemy : MonoBehaviour
 {
+    public enum FacingDirection
+    {
+        Left, Right
+    }
     [Header("References")]
     [SerializeField] Transform firePoint;
     [SerializeField] GameObject bulletPrefab;
-    [SerializeField] Transform player;
 
     [Header("Settings")]
     [SerializeField] float detectionRange = 10f;
-    [SerializeField] int facingDirection = 1;
+    [SerializeField] FacingDirection facingDirection = FacingDirection.Left;
     [SerializeField] LayerMask obstacleLayer; // walls/ground
     [SerializeField] LayerMask playerLayer;
 
+    int facingDir;
+    Transform player;
     Vector2 direction;
     Animator animator;
 
-    void Start()
+    void Awake()
     {
         animator = GetComponent<Animator>();
+    }
+
+    void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        facingDir = facingDirection == FacingDirection.Left ? 1 : -1;
+        Flip(facingDir);
     }
 
     void Update()
@@ -37,7 +50,7 @@ public class TurretEnemy : MonoBehaviour
 
     bool CanSeePlayer()
     {
-        direction = Vector2.right * facingDirection;
+        direction = Vector2.left * facingDir;
 
         RaycastHit2D hit = Physics2D.Raycast(
             firePoint.position,
@@ -54,7 +67,6 @@ public class TurretEnemy : MonoBehaviour
                 return true;
             }
         }
-
         return false;
     }
 
@@ -62,15 +74,18 @@ public class TurretEnemy : MonoBehaviour
     public void Shoot()
     {
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
-        bullet.GetComponent<Bullet>().Initialize(facingDirection, gameObject);
+        bullet.GetComponent<Bullet>().Initialize(-facingDir, gameObject);
+    }
+
+    private void Flip(int direction)
+    {
+        transform.localScale = new Vector3(transform.localScale.x * direction, transform.localScale.y, transform.localScale.z);
     }
 
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Vector3 direction = Vector3.right * facingDirection;
-
+        Vector3 direction = Vector3.left * facingDir;
         Gizmos.DrawLine(transform.position, transform.position + direction * detectionRange);
-
     }
 }

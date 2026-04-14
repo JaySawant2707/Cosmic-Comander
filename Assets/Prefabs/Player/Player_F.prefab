@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1021808139606585641}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5938839918703775533}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 2374813382577283850}
   - component: {fileID: 1447997021166072179}
   - component: {fileID: 8849928989609737061}
-  - component: {fileID: 2836300715752921864}
+  - component: {fileID: 607047448245573036}
   - component: {fileID: 5665002944162917644}
   - component: {fileID: 667644789916324509}
   - component: {fileID: 1489199152249997865}
@@ -82,7 +82,7 @@ GameObject:
   - component: {fileID: 7871019393242791565}
   - component: {fileID: 6850741904642585273}
   - component: {fileID: 2072884631708618388}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player_F
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -192,8 +192,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!70 &2836300715752921864
-CapsuleCollider2D:
+--- !u!61 &607047448245573036
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -226,9 +226,18 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.29618925}
-  m_Size: {x: 0.45442754, y: 1.5335516}
-  m_Direction: 0
+  m_Offset: {x: 0, y: -0.28220874}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.21875, y: 2.09375}
+    newSize: {x: 1.3333334, y: 1.3333334}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.4500343, y: 1.5293325}
+  m_EdgeRadius: 0
 --- !u!95 &5665002944162917644
 Animator:
   serializedVersion: 7

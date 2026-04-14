@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(Animator))]
 public class PatrolShooterEnemy : MonoBehaviour
 {
     [Header("Patrol")]
@@ -12,21 +13,25 @@ public class PatrolShooterEnemy : MonoBehaviour
     [Header("Combat")]
     [SerializeField] Transform firePoint;
     [SerializeField] GameObject bulletPrefab;
-    [SerializeField] Transform player;
     [SerializeField] float detectionRange = 8f;
     [SerializeField] LayerMask playerLayer;
     [SerializeField] LayerMask obstacleLayer;
 
-    [Header("Animation")]
-    [SerializeField] Animator animator;
-
+    Animator animator;
+    Transform player;
     private Transform currentTarget;
     private bool isWaiting;
     private bool isAttacking;
     private int facingDirection = 1;
 
+    void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         currentTarget = pointA;
         UpdateFacing();
     }

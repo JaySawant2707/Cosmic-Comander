@@ -17,7 +17,7 @@ TagManager:
   - Props
   - Water
   - UI
-  - enemy
+  - Enemy
   - Platform
   - Ground
   - Player
