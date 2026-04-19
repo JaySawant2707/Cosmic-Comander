@@ -10,6 +10,12 @@ public class Bullet : MonoBehaviour
     private int direction = 1;
     private GameObject owner;
 
+    void Awake()
+    {
+        if (!gameObject.GetComponent<Rigidbody2D>())
+            gameObject.AddComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+    }
+
     public void Initialize(int dir, GameObject ownerObj)
     {
         direction = dir;

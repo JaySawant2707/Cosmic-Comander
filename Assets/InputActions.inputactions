@@ -47,7 +47,18 @@
                 {
                     "name": "",
                     "id": "9305a104-47db-4de8-86a8-2cebdaf6b37e",
-                    "path": "<Keyboard>/space",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ad728b40-e410-40eb-97bf-13a639477c24",
+                    "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -58,7 +69,7 @@
                 {
                     "name": "WASD",
                     "id": "699377f0-23ee-437c-a50b-78661a4c45ac",
-                    "path": "2DVector",
+                    "path": "2DVector(mode=1)",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -113,7 +124,7 @@
                 {
                     "name": "Arrow Keys",
                     "id": "f9800208-5e3a-495d-845d-6b1e5fc67814",
-                    "path": "2DVector",
+                    "path": "2DVector(mode=1)",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -179,7 +190,7 @@
                 {
                     "name": "",
                     "id": "55a42a9f-ba9b-476f-a36c-6dcc8f9c69b2",
-                    "path": "<Keyboard>/q",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

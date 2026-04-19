@@ -18,6 +18,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float fallMultiplier = 2.5f;
     [SerializeField] float lowJumpMultiplier = 2f;
 
+    [Header("Double Jump")]
+    [SerializeField] int maxJumps = 2;
+    int jumpCount;
+
     float coyoteTimeCounter;
     float jumpBufferCounter;
     Rigidbody2D rb;
@@ -97,6 +101,7 @@ public class PlayerController : MonoBehaviour
 
     void HandleJump()
     {
+        // First jump (ground + coyote time)
         if (jumpBufferCounter > 0f && coyoteTimeCounter > 0f)
         {
             Jump();
@@ -105,11 +110,23 @@ public class PlayerController : MonoBehaviour
             jumpBufferCounter = 0f;
             coyoteTimeCounter = 0f;
             input.JumpPressed = false;
+
+            jumpCount = 1; // first jump used
+        }
+        // Double jump (mid-air)
+        else if (input.JumpPressed && jumpCount < maxJumps && !isGrounded)
+        {
+            Jump();
+            anim.PlayJump();
+
+            input.JumpPressed = false;
+            jumpCount++;
         }
     }
 
     public void Jump()
     {
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f); // reset Y
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
     }
 
@@ -144,6 +161,11 @@ public class PlayerController : MonoBehaviour
             radius,
             groundLayer
         );
+
+        if (isGrounded)
+        {
+            jumpCount = 0; // reset jumps
+        }
     }
 
     void OnDrawGizmosSelected()

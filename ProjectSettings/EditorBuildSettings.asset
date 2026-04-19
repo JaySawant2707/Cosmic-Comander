@@ -14,38 +14,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/All_Levels.unity
     guid: 0000bc36cce28b7448aaee139c73f6ec
-  - enabled: 0
-    path: Assets/Scenes/Level0.unity
-    guid: 3fc8acdd13e6c734bafef6554d6fdbcd
-  - enabled: 0
-    path: Assets/Scenes/Level1.unity
-    guid: 75f1f789fa7fe6c4abaf906e4a65368d
-  - enabled: 0
-    path: Assets/Scenes/Level2.unity
-    guid: 4d23c9b536b4b3a4687f54c2550db487
-  - enabled: 0
-    path: Assets/Scenes/Level3.unity
-    guid: f7b52880325f8c64684d3329db02b262
-  - enabled: 0
-    path: Assets/Scenes/Level4.unity
-    guid: d15c71aa97914a6429406cfd822f2fc1
-  - enabled: 0
-    path: Assets/Scenes/Level5.unity
-    guid: a9a78f67c71c5274ca8a36da80f92fa5
-  - enabled: 0
-    path: Assets/Scenes/Level6.unity
-    guid: 1297fcc3e07a83a45a1b895e7079e558
-  - enabled: 0
-    path: Assets/Scenes/Level7.unity
-    guid: 81aecd6b2fd22d041bd1d8ec07114ad5
-  - enabled: 0
-    path: Assets/Scenes/Level8.unity
-    guid: 22f5243566f339c4da59c4e535470aa1
-  - enabled: 0
-    path: Assets/Scenes/Level9.unity
-    guid: 8a576e02dec80ae4c96e2cad16f77e54
   - enabled: 1
-    path: Assets/Scenes/Remake/Level 1.unity
+    path: Assets/Scenes/Remake/Level0.unity
     guid: ce67a9673316c694ca8e6e7d22510d64
+  - enabled: 1
+    path: Assets/Scenes/Remake/Level1.unity
+    guid: 05820a7edd12146408030c5b97cf2d8c
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

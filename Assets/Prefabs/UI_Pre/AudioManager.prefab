@@ -43,6 +43,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 5805472484686451159, guid: 4f83cdad052014f4183770680fa0a07d, type: 2}
   m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -171,6 +172,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 3064066922516570950, guid: 4f83cdad052014f4183770680fa0a07d, type: 2}
   m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: ba33bf6d809cecc48aef9960da21c659, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -310,7 +312,7 @@ MonoBehaviour:
   DoorOpen: {fileID: 8300000, guid: 0878dbdf9d71156419a5d73cc4483558, type: 3}
   Shoot: {fileID: 8300000, guid: 21189661bf4e1b943ab5765d8c886955, type: 3}
   Death: {fileID: 8300000, guid: a9caaae6936b23442b18cf107feb74bf, type: 3}
-  laserShoot: {fileID: 8300000, guid: bdc84c339e0018c4c83f87006b47782d, type: 3}
+  laserShoot: {fileID: 8300000, guid: 1fc94537bb10c8446b877ad111ca81d2, type: 3}
   Slash: {fileID: 8300000, guid: 51ad590d47938bc41a37fa581c996c5c, type: 3}
   CoinCollect: {fileID: 8300000, guid: 54e5af89a475fb24db03daaf0768b237, type: 3}
   Blast: {fileID: 8300000, guid: c9d9b41839d8de840b18479333a6b6d6, type: 3}

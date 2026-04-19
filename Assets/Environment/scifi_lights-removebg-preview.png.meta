@@ -1,0 +1,465 @@
+fileFormatVersion: 2
+guid: cfbdbbe0416f4bc42afe6fe21370c3be
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4276818361340723796
+    second: scifi_lights-removebg-preview_0
+  - first:
+      213: -7682426549283147138
+    second: scifi_lights-removebg-preview_1
+  - first:
+      213: 6063265147488716124
+    second: scifi_lights-removebg-preview_2
+  - first:
+      213: -1557419910874813560
+    second: scifi_lights-removebg-preview_3
+  - first:
+      213: -6875038327209749616
+    second: scifi_lights-removebg-preview_4
+  - first:
+      213: -1519286436974489543
+    second: scifi_lights-removebg-preview_5
+  - first:
+      213: 6347752487668890733
+    second: scifi_lights-removebg-preview_6
+  - first:
+      213: -4987401364882865845
+    second: scifi_lights-removebg-preview_7
+  - first:
+      213: 3069556874650378809
+    second: scifi_lights-removebg-preview_8
+  - first:
+      213: 4316644846167365460
+    second: scifi_lights-removebg-preview_9
+  - first:
+      213: 5382611423016666791
+    second: scifi_lights-removebg-preview_10
+  - first:
+      213: -7648305491361010831
+    second: scifi_lights-removebg-preview_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: scifi_lights-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 504
+        width: 175
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cadfa632c50b5a4c0800000000000000
+      internalID: -4276818361340723796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scifi_lights-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 506
+        width: 166
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e72b2f4b1c9826590800000000000000
+      internalID: -7682426549283147138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scifi_lights-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 316
+        width: 84
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c55421fe68b052450800000000000000
+      internalID: 6063265147488716124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scifi_lights-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 317
+        width: 73
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88baf26b7dee26ae0800000000000000
+      internalID: -1557419910874813560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scifi_lights-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 331
+        width: 89
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09397712115f690a0800000000000000
+      internalID: -6875038327209749616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scifi_lights-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 334
+        width: 58
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 930111cf8096aeae0800000000000000
+      internalID: -1519286436974489543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scifi_lights-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 165
+        width: 118
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c3b95714fb71850800000000000000
+      internalID: 6347752487668890733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scifi_lights-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 207
+        width: 63
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b41cbdd02e039cab0800000000000000
+      internalID: -4987401364882865845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scifi_lights-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 136
+        width: 45
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 932e46bd6b1499a20800000000000000
+      internalID: 3069556874650378809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scifi_lights-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 61
+        width: 106
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4579355fd9dc7eb30800000000000000
+      internalID: 4316644846167365460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scifi_lights-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 54
+        width: 71
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a64ed82290e2ba40800000000000000
+      internalID: 5382611423016666791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scifi_lights-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 45
+        width: 58
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17be1c59da2cbd590800000000000000
+      internalID: -7648305491361010831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scifi_lights-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 419
+        width: 7
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01b69f27ffbc7643815136c85c268c9
+      internalID: 457235474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7164db9c5a7029845914721ae979c30d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      scifi_lights-removebg-preview_0: -4276818361340723796
+      scifi_lights-removebg-preview_1: -7682426549283147138
+      scifi_lights-removebg-preview_10: 5382611423016666791
+      scifi_lights-removebg-preview_11: -7648305491361010831
+      scifi_lights-removebg-preview_12: 457235474
+      scifi_lights-removebg-preview_2: 6063265147488716124
+      scifi_lights-removebg-preview_3: -1557419910874813560
+      scifi_lights-removebg-preview_4: -6875038327209749616
+      scifi_lights-removebg-preview_5: -1519286436974489543
+      scifi_lights-removebg-preview_6: 6347752487668890733
+      scifi_lights-removebg-preview_7: -4987401364882865845
+      scifi_lights-removebg-preview_8: 3069556874650378809
+      scifi_lights-removebg-preview_9: 4316644846167365460
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
