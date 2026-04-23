@@ -10,13 +10,11 @@ public class Enemy : MonoBehaviour
     public bool isDead = false;
 
     int currentHealth;
-    AudioManager audioManager;
 
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
 
@@ -33,7 +31,7 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-        audioManager.PlaySFX(audioManager.Blast);
+        AudioManager.instance.PlaySFX("Blast");
 
         isDead = true;
 

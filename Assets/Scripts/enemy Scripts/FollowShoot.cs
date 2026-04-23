@@ -14,14 +14,12 @@ public class FollowShoot : MonoBehaviour
     private Animator anim;
     private float nextFireTime;
     private Transform player;
-    AudioManager audioManager;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         anim = GetComponent<Animator>();
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -37,7 +35,7 @@ public class FollowShoot : MonoBehaviour
         else if (distanceFromPlayer < shootingRange && nextFireTime < Time.time)
         {
             anim.SetBool("isRunning", false);
-            audioManager.PlaySFX(audioManager.Shoot);
+            AudioManager.instance.PlaySFX("Shoot");
             Instantiate(bullet, bulletPos.transform.position, Quaternion.identity);
             nextFireTime = Time.time + fireRate;
         }

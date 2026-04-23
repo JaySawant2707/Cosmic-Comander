@@ -214,8 +214,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
   speed: 15
-  lifeTime: 3
+  lifeTime: 2
   explosionPrefab: {fileID: 2027181217226055305, guid: bcad4b11b9f56eb4fab73830c730c6f1, type: 3}
+  destroyWhenOutOfView: 1
+  damageableLayers:
+    serializedVersion: 2
+    m_Bits: 511
 --- !u!70 &4383090127153341926
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

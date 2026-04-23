@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class PlayerDeath : MonoBehaviour
 {
-    [SerializeField] AudioManager audioManager;
     [SerializeField] float beforeRespawnCooldown = 0.5f;
     PlayerAnimationController anim;
     PlayerController playerController;
@@ -47,7 +46,7 @@ public class PlayerDeath : MonoBehaviour
     {
         isAlive = false;
         anim.PlayDeath();
-        audioManager.PlaySFX(audioManager.Death);
+        AudioManager.instance.PlaySFX("Death");
         playerController.enabled = false;
         playerInputHandler.enabled = false;
 

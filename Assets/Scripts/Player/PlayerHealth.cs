@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(PlayerAnimationController))]
 [RequireComponent(typeof(Rigidbody2D))]
@@ -8,6 +9,9 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     [SerializeField] int maxHealth = 3;
     [SerializeField] float invincibleTime = 1f;
     [SerializeField] float knockbackForce = 5f;
+
+    [Header("UI")]
+    [SerializeField] private Slider healthSlider;
 
     PlayerAnimationController anim;
     PlayerDeath playerDeath;
@@ -20,6 +24,21 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         anim = GetComponent<PlayerAnimationController>();
         currentHealth = maxHealth;
         playerDeath = GetComponent<PlayerDeath>();
+
+        UpdateUI();
+    }
+
+    public bool CanHeal()
+    {
+        return currentHealth < maxHealth;
+    }
+
+    public void Heal(int amount)
+    {
+        currentHealth += amount;
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+
+        UpdateUI();
     }
 
     public void TakeDamage(int damage)
@@ -41,6 +60,8 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         {
             StartCoroutine(Invincibility());
         }
+
+        UpdateUI();
     }
 
     void Die()
@@ -62,4 +83,14 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     {
         currentHealth = maxHealth;
     }
+
+    private void UpdateUI()
+    {
+        if (healthSlider != null)
+        {
+            healthSlider.maxValue = maxHealth;
+            healthSlider.value = currentHealth;
+        }
+    }
+
 }

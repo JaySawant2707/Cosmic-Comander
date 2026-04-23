@@ -21,7 +21,7 @@ TagManager:
   - Platform
   - Ground
   - Player
-  - 
+  - Collectibles
   - 
   - 
   - 
@@ -50,7 +50,7 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Middle
+  - name: Player
     uniqueID: 449469739
     locked: 0
   - name: Foreground

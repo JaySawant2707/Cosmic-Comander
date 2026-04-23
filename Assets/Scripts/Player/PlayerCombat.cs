@@ -1,5 +1,9 @@
 using UnityEngine;
 
+[RequireComponent(typeof(PlayerAnimationController))]
+[RequireComponent(typeof(PlayerInputHandler))]
+[RequireComponent(typeof(PlayerController))]
+[RequireComponent(typeof(PlayerDeath))]
 public class PlayerCombat : MonoBehaviour
 {
     [Header("References")]
@@ -10,9 +14,6 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField] float fireRate = 5f; // bullets per second
     private float fireTimer;
     bool isShooting;
-
-    [Header("Audio")]
-    [SerializeField] AudioManager audioManager;
 
     PlayerInputHandler input;
     PlayerAnimationController anim;
@@ -64,8 +65,6 @@ public class PlayerCombat : MonoBehaviour
 
         bullet.GetComponent<Bullet>().Initialize(direction, gameObject);
 
-
-        if (audioManager != null)
-            audioManager.PlaySFX(audioManager.laserShoot);
+        AudioManager.instance.PlaySFX("PlayerShoot");
     }
 }

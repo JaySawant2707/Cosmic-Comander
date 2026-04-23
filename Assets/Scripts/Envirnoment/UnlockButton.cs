@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class UnlockButton : MonoBehaviour
 {
-    AudioManager audioManager;
+    // AudioManager audioManager;
     public GameObject Door;
     public Animator anim;
     SpriteRenderer spriteRenderer;
@@ -14,7 +14,7 @@ public class UnlockButton : MonoBehaviour
     private void Start()
     {
         anim = Door.GetComponent<Animator>();
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        // audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -23,7 +23,7 @@ public class UnlockButton : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Box"))
             {
-                audioManager.PlaySFX(audioManager.DoorOpen);
+                AudioManager.instance.PlaySFX("DoorOpen");
                 anim.SetBool("Open", true);
                 spriteRenderer.enabled = false;
             }
@@ -37,7 +37,7 @@ public class UnlockButton : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Box"))
             {
-                audioManager.PlaySFX(audioManager.DoorOpen);
+                AudioManager.instance.PlaySFX("DoorOpen");
                 anim.SetBool("Open", false);
                 spriteRenderer.enabled = true;
             }

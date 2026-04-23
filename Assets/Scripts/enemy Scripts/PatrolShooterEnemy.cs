@@ -96,6 +96,7 @@ public class PatrolShooterEnemy : MonoBehaviour
     {
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
         bullet.GetComponent<Bullet>().Initialize(facingDirection, gameObject);
+        AudioManager.instance.PlaySFX("EnemyShoot");
     }
 
     // ---------------- DETECTION ----------------

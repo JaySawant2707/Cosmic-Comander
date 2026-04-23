@@ -1,5 +1,8 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(PlayerInputHandler))]
+[RequireComponent(typeof(PlayerAnimationController))]
 public class PlayerController : MonoBehaviour
 {
     [Header("Movement")]
@@ -30,7 +33,10 @@ public class PlayerController : MonoBehaviour
 
     bool isFacingRight = true;
     public int FacingDirection => isFacingRight ? 1 : -1;
+
     bool isGrounded;
+    bool wasGrounded;
+    bool hasJumped;
     public bool IsGrounded => isGrounded;
 
     void Start()
@@ -51,18 +57,18 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         HandleMovement();
-        ApplyBetterGravity(input.JumpPressed);
+        ApplyBetterGravity(input.JumpHeld);
     }
 
     public void ApplyBetterGravity(bool jumpHeld)
     {
         if (rb.linearVelocity.y < 0)
         {
-            rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.fixedDeltaTime;
+            rb.linearVelocity += Vector2.up * (Physics2D.gravity.y * (fallMultiplier - 1) * Time.fixedDeltaTime);
         }
         else if (rb.linearVelocity.y > 0 && !jumpHeld)
         {
-            rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.fixedDeltaTime;
+            rb.linearVelocity += Vector2.up * (Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.fixedDeltaTime);
         }
     }
 
@@ -86,13 +92,20 @@ public class PlayerController : MonoBehaviour
 
     void HandleTimers()
     {
-        // Coyote time
-        if (isGrounded)
+        if (isGrounded && !hasJumped)
             coyoteTimeCounter = coyoteTime;
         else
+        {
             coyoteTimeCounter -= Time.deltaTime;
 
-        // Jump buffer
+            // When coyote time expires and the player never jumped (walked off a platform),
+            // forfeit the first jump slot so the double jump is still available mid-air.
+            // Without this, jumpCount stays 0 forever in mid-air, and the air jump branch
+            // (which requires jumpCount >= 1) would never fire — locking out the double jump.
+            if (coyoteTimeCounter <= 0f && jumpCount == 0 && !isGrounded)
+                jumpCount = 1;
+        }
+
         if (input.JumpPressed)
             jumpBufferCounter = jumpBufferTime;
         else
@@ -101,8 +114,10 @@ public class PlayerController : MonoBehaviour
 
     void HandleJump()
     {
-        // First jump (ground + coyote time)
-        if (jumpBufferCounter > 0f && coyoteTimeCounter > 0f)
+        // --- FIRST JUMP ---
+        // Only reachable when grounded or within the coyote time window.
+        // Mid-air presses with expired coyote time cannot trigger this branch.
+        if (jumpBufferCounter > 0f && coyoteTimeCounter > 0f && jumpCount < maxJumps)
         {
             Jump();
             anim.PlayJump();
@@ -110,23 +125,28 @@ public class PlayerController : MonoBehaviour
             jumpBufferCounter = 0f;
             coyoteTimeCounter = 0f;
             input.JumpPressed = false;
+            hasJumped = true;
 
-            jumpCount = 1; // first jump used
+            jumpCount = 1; // mark first jump as consumed
         }
-        // Double jump (mid-air)
-        else if (input.JumpPressed && jumpCount < maxJumps && !isGrounded)
+
+        // --- DOUBLE JUMP (and any extra air jumps) ---
+        // Requires jumpCount >= 1: either the player used their first jump normally,
+        // OR coyote time expired and HandleTimers auto-advanced jumpCount to 1 (fell off platform).
+        // Both cases correctly allow exactly one air jump.
+        else if (input.JumpPressed && jumpCount >= 1 && jumpCount < maxJumps && !isGrounded)
         {
             Jump();
             anim.PlayJump();
 
             input.JumpPressed = false;
+            hasJumped = true;
             jumpCount++;
         }
     }
 
     public void Jump()
     {
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f); // reset Y
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
     }
 
@@ -134,15 +154,10 @@ public class PlayerController : MonoBehaviour
     {
         float move = input.MoveInput.x;
 
-        // Only flip if actually moving (prevents jitter)
         if (move > 0 && !isFacingRight)
-        {
             Flip();
-        }
         else if (move < 0 && isFacingRight)
-        {
             Flip();
-        }
     }
 
     void Flip()
@@ -156,15 +171,13 @@ public class PlayerController : MonoBehaviour
 
     void CheckGround()
     {
-        isGrounded = Physics2D.OverlapCircle(
-            groundCheck.position,
-            radius,
-            groundLayer
-        );
+        wasGrounded = isGrounded;
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, radius, groundLayer);
 
-        if (isGrounded)
+        if (!wasGrounded && isGrounded)
         {
-            jumpCount = 0; // reset jumps
+            jumpCount = 0;
+            hasJumped = false;
         }
     }
 

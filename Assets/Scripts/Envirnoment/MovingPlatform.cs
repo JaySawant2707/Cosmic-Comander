@@ -8,6 +8,9 @@ public class MovingPlatform : MonoBehaviour
     [SerializeField] float speed = 2f;
     [SerializeField] float waitTime = 0.5f;
 
+    [Header("Start Delay")]
+    [SerializeField] float startDelay = 0f; // NEW
+
     [Header("Movement Mode")]
     [SerializeField] bool loop = true; // if false → ping pong
 
@@ -22,10 +25,27 @@ public class MovingPlatform : MonoBehaviour
     int direction = 1; // for ping-pong
     bool isWaiting = false;
 
+    bool canStart = false; // NEW
+
+    // ---------------- START ----------------
+    void Start()
+    {
+        if (startDelay > 0f)
+            StartCoroutine(StartDelayRoutine());
+        else
+            canStart = true;
+    }
+
+    System.Collections.IEnumerator StartDelayRoutine()
+    {
+        yield return new WaitForSeconds(startDelay);
+        canStart = true;
+    }
+
     // ---------------- UPDATE ----------------
     void Update()
     {
-        if (!isMoving || points.Count == 0 || isWaiting)
+        if (!canStart || !isMoving || points.Count == 0 || isWaiting)
         {
             PlatformVelocity = Vector2.zero;
             return;

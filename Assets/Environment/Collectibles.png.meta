@@ -1,0 +1,348 @@
+fileFormatVersion: 2
+guid: 2ebebd49c19a49548bf4e94bee284c75
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3404651025987517522
+    second: Collectibles_0
+  - first:
+      213: -4482896367203201399
+    second: Collectibles_1
+  - first:
+      213: -7691055925504261015
+    second: Collectibles_2
+  - first:
+      213: -1141649079087537557
+    second: Collectibles_3
+  - first:
+      213: -1054624876298059505
+    second: Collectibles_4
+  - first:
+      213: 5941773899504188461
+    second: Collectibles_5
+  - first:
+      213: -1199817805618935749
+    second: Collectibles_6
+  - first:
+      213: -877461318695221028
+    second: Collectibles_7
+  - first:
+      213: -8941473026959914590
+    second: Collectibles_8
+  - first:
+      213: -7233366584844903599
+    second: Collectibles_9
+  - first:
+      213: 3032324704949369101
+    second: Collectibles_10
+  - first:
+      213: -6497758556750862045
+    second: Collectibles_11
+  - first:
+      213: -2906450649757156128
+    second: Collectibles_12
+  - first:
+      213: 957867192696962611
+    second: Collectibles_13
+  - first:
+      213: 6733362142160969027
+    second: Collectibles_14
+  - first:
+      213: 1697388050556080783
+    second: Collectibles_15
+  - first:
+      213: -5729195370076917895
+    second: Collectibles_16
+  - first:
+      213: 983775986614698737
+    second: Collectibles_17
+  - first:
+      213: -6534588651288596166
+    second: Collectibles_18
+  - first:
+      213: -3429280035563200294
+    second: Collectibles_19
+  - first:
+      213: -2396171332230463055
+    second: Collectibles_20
+  - first:
+      213: 969610768416908208
+    second: Collectibles_21
+  - first:
+      213: 1484302714201300773
+    second: Collectibles_22
+  - first:
+      213: -3904463144074469937
+    second: Collectibles_23
+  - first:
+      213: 2905423553871156107
+    second: Collectibles_24
+  - first:
+      213: -1716077489821061247
+    second: Collectibles_25
+  - first:
+      213: -7583839619711740435
+    second: Collectibles_26
+  - first:
+      213: 8082508284693083503
+    second: Collectibles_27
+  - first:
+      213: -449785382410079155
+    second: Collectibles_28
+  - first:
+      213: 7770950653756414057
+    second: Collectibles_29
+  - first:
+      213: 3683686675998181755
+    second: Collectibles_30
+  - first:
+      213: -2033255583221514619
+    second: Collectibles_31
+  - first:
+      213: 4059934537215901329
+    second: Collectibles_32
+  - first:
+      213: 1204424943902178294
+    second: Collectibles_33
+  - first:
+      213: 3152705620680243399
+    second: Collectibles_34
+  - first:
+      213: 7126952682462629538
+    second: Collectibles_35
+  - first:
+      213: 5597792897014085186
+    second: Collectibles_36
+  - first:
+      213: 3733112365272819191
+    second: Collectibles_37
+  - first:
+      213: -4075831117552874684
+    second: Collectibles_38
+  - first:
+      213: 3494106706254173458
+    second: Collectibles_39
+  - first:
+      213: -7542758081610381241
+    second: Collectibles_40
+  - first:
+      213: -7996758714101350788
+    second: Collectibles_41
+  - first:
+      213: 7520240511493591264
+    second: Collectibles_42
+  - first:
+      213: 4326874210531669153
+    second: Collectibles_43
+  - first:
+      213: 824565218398080602
+    second: Collectibles_44
+  - first:
+      213: -2433675641093116741
+    second: Collectibles_45
+  - first:
+      213: 4185535173615867079
+    second: Collectibles_46
+  - first:
+      213: 5471040945984752872
+    second: Collectibles_47
+  - first:
+      213: -3540040173243504455
+    second: Collectibles_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Collectibles_0
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 804
+        width: 145
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25cb72cc110cf3f20800000000000000
+      internalID: 3404651025987517522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectibles_1
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 559
+        width: 75
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817e303430a37fd499152d7f2c232ebd
+      internalID: -249183636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectibles_2
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 0
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfdb9933af25cc940adce88d833cd2ae
+      internalID: -1311971709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5574488168126804b8de9d0f8813501c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1536.0,"y":1024.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Collectibles_0: 3404651025987517522
+      Collectibles_1: -249183636
+      Collectibles_2: -1311971709
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -17,14 +17,12 @@ public class EnemyShooting : MonoBehaviour
     public float timer = 1;
     public float ShootAnimDelay;
 
-    AudioManager audioManager;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         animator = GetComponent<Animator>();
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
 
     }
 
@@ -59,7 +57,7 @@ public class EnemyShooting : MonoBehaviour
     {
         yield return new WaitForSeconds(ShootAnimDelay);
 
-        audioManager.PlaySFX(audioManager.Shoot);
+        AudioManager.instance.PlaySFX("Shoot");
 
         Instantiate(Bullet, BulletPOS.position, Quaternion.identity);
     }

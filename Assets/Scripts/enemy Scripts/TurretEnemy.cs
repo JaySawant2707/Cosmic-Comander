@@ -75,6 +75,8 @@ public class TurretEnemy : MonoBehaviour
     {
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
         bullet.GetComponent<Bullet>().Initialize(-facingDir, gameObject);
+
+        AudioManager.instance.PlaySFX("EnemyShoot");
     }
 
     private void Flip(int direction)

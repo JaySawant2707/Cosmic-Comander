@@ -1,0 +1,289 @@
+fileFormatVersion: 2
+guid: 5548977276b1239499bb99a99afb5211
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -287338287352150226
+    second: PlayerHealthUI_0
+  - first:
+      213: -7781989884815677747
+    second: PlayerHealthUI_1
+  - first:
+      213: -4586471554772016835
+    second: PlayerHealthUI_2
+  - first:
+      213: 4926799084560207373
+    second: PlayerHealthUI_3
+  - first:
+      213: 3982154659187602703
+    second: PlayerHealthUI_4
+  - first:
+      213: -9211764677574076336
+    second: PlayerHealthUI_5
+  - first:
+      213: 4892804237183036253
+    second: PlayerHealthUI_6
+  - first:
+      213: 961534271616543076
+    second: PlayerHealthUI_7
+  - first:
+      213: 8804113136880233665
+    second: PlayerHealthUI_8
+  - first:
+      213: -6876561849420448912
+    second: PlayerHealthUI_9
+  - first:
+      213: 1827346003719145604
+    second: PlayerHealthUI_10
+  - first:
+      213: 8074222633438179698
+    second: PlayerHealthUI_11
+  - first:
+      213: -4883334642008742655
+    second: PlayerHealthUI_12
+  - first:
+      213: -7864625951809812669
+    second: PlayerHealthUI_13
+  - first:
+      213: -8327860601943456899
+    second: PlayerHealthUI_14
+  - first:
+      213: -4714398734395007365
+    second: PlayerHealthUI_15
+  - first:
+      213: -1931226174666013283
+    second: PlayerHealthUI_16
+  - first:
+      213: 3506550747229200612
+    second: PlayerHealthUI_17
+  - first:
+      213: -2627246092276478114
+    second: PlayerHealthUI_18
+  - first:
+      213: 4661904670442314957
+    second: PlayerHealthUI_19
+  - first:
+      213: -2690716260462397211
+    second: PlayerHealthUI_20
+  - first:
+      213: -8287073790822846751
+    second: PlayerHealthUI_21
+  - first:
+      213: 6276235241818246276
+    second: PlayerHealthUI_22
+  - first:
+      213: 6972919259014304209
+    second: PlayerHealthUI_23
+  - first:
+      213: -3050888417584361183
+    second: PlayerHealthUI_24
+  - first:
+      213: -3830934491177401198
+    second: PlayerHealthUI_25
+  - first:
+      213: -1387970313927866966
+    second: PlayerHealthUI_26
+  - first:
+      213: -2582963338898731925
+    second: PlayerHealthUI_27
+  - first:
+      213: -2954998097015112463
+    second: PlayerHealthUI_28
+  - first:
+      213: 1042511058646997537
+    second: PlayerHealthUI_29
+  - first:
+      213: 1513528572193890276
+    second: PlayerHealthUI_30
+  - first:
+      213: -468267103535977033
+    second: PlayerHealthUI_31
+  - first:
+      213: -4399383797327391761
+    second: PlayerHealthUI_32
+  - first:
+      213: 7288155257513685394
+    second: PlayerHealthUI_33
+  - first:
+      213: -3186230667874021507
+    second: PlayerHealthUI_34
+  - first:
+      213: -7662825515203779005
+    second: PlayerHealthUI_35
+  - first:
+      213: 4844900049444969337
+    second: PlayerHealthUI_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerHealthUI_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 739
+        width: 672
+        height: 162
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e27810c995b230cf0800000000000000
+      internalID: -287338287352150226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHealthUI_1
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1215
+        width: 130
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68068797ac2301b499b94c260a4b35ee
+      internalID: -7781989884815677747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9bb7131814bf43548a7e6f63aaaaf312
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":720.0,"y":1456.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      PlayerHealthUI_0: -287338287352150226
+      PlayerHealthUI_1: -7781989884815677747
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

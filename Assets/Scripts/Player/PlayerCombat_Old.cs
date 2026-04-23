@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class PlayerCombat_Old : MonoBehaviour
 {
-    [SerializeField] AudioManager audioManager;
     [SerializeField] Transform attackPoint;
     [SerializeField] Transform firePoint;
 
@@ -55,7 +54,7 @@ public class PlayerCombat_Old : MonoBehaviour
             nextAttackTime = Time.time + 1f / attackRate;
 
             anim.PlaySlash();
-            audioManager.PlaySFX(audioManager.Slash);
+            AudioManager.instance.PlaySFX("Slash");
 
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
 
@@ -85,7 +84,7 @@ public class PlayerCombat_Old : MonoBehaviour
     IEnumerator Shoot()
     {
         anim.PlayShoot();
-        audioManager.PlaySFX(audioManager.laserShoot);
+        AudioManager.instance.PlaySFX("LaserShoot");
 
         yield return new WaitForSeconds(0.5f);
 

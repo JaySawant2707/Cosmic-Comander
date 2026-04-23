@@ -453,16 +453,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   speed: 8
   groundCheck: {fileID: 1021808139606585641}
-  radius: 0.15
+  radius: 0.1
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
   jumpForce: 15
   coyoteTime: 0.1
-  jumpBufferTime: 0.1
+  jumpBufferTime: 0.2
   fallMultiplier: 2.5
   lowJumpMultiplier: 2
-  maxJumps: 1
+  maxJumps: 2
 --- !u!114 &3702685919088060274
 MonoBehaviour:
   m_ObjectHideFlags: 0

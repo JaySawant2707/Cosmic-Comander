@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Unlock_Board : MonoBehaviour
 {
-    AudioManager audioManager;
+    // AudioManager audioManager;
     public GameObject Door;
     public Animator anim;
     Animator animator;
@@ -12,14 +12,14 @@ public class Unlock_Board : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         anim = Door.GetComponent<Animator>();
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        // audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             animator.SetTrigger("Triggered");
-            audioManager.PlaySFX(audioManager.DoorOpen);
+            AudioManager.instance.PlaySFX("DoorOpen");
             anim.SetBool("Open", true);
             isOpen = true;
         }

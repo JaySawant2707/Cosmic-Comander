@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
 
 public class MainMenu : MonoBehaviour
 {
@@ -11,8 +8,7 @@ public class MainMenu : MonoBehaviour
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
 
-        audioManager.Music.clip = audioManager.MMbackground;
-        audioManager.Music.Play();
+        AudioManager.instance.PlayMusic("MainMenuTheme");
     }
     public void PlayGame()
     {

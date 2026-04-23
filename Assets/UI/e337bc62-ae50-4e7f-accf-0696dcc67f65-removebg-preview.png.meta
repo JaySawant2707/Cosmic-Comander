@@ -1,0 +1,358 @@
+fileFormatVersion: 2
+guid: fa2f053df1c83b84f862bfcecfb49118
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2658379250888314128
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_0
+  - first:
+      213: -1548936008448970721
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_1
+  - first:
+      213: -8225601040102714505
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_2
+  - first:
+      213: -8883050166578416099
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_3
+  - first:
+      213: -4600616759936366380
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_4
+  - first:
+      213: 7454615976271189083
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_5
+  - first:
+      213: 2390991126770496440
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_6
+  - first:
+      213: -8259463701382238091
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_7
+  - first:
+      213: -5626456502722169262
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_8
+  - first:
+      213: -5049265417023535780
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_9
+  - first:
+      213: -4833288463684922160
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_10
+  - first:
+      213: 4835040707165492029
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_11
+  - first:
+      213: -8153963923966463818
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_12
+  - first:
+      213: -1527573529838965898
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_13
+  - first:
+      213: -5279251195651843270
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_14
+  - first:
+      213: 274069741823361735
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_15
+  - first:
+      213: -8280300281197581342
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_16
+  - first:
+      213: -6587074429107828749
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_17
+  - first:
+      213: -46088272658740920
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_18
+  - first:
+      213: 6299449660407912494
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_19
+  - first:
+      213: -3650461533091286545
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_20
+  - first:
+      213: 4705890974103455097
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_21
+  - first:
+      213: 156644983650136228
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_22
+  - first:
+      213: -8135314340780153468
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_23
+  - first:
+      213: 6321973390015939128
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_24
+  - first:
+      213: -1997789598130664707
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_25
+  - first:
+      213: -6818748957522287636
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_26
+  - first:
+      213: 6012773352094603824
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_27
+  - first:
+      213: -7385686450748160170
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_28
+  - first:
+      213: 3936445613660259218
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_29
+  - first:
+      213: -223152651919165798
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_30
+  - first:
+      213: 5752773605933613488
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_31
+  - first:
+      213: -1517666340994930337
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_32
+  - first:
+      213: 6708323076757120706
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_33
+  - first:
+      213: 8626536652065529141
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_34
+  - first:
+      213: -4365481180475043668
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_35
+  - first:
+      213: 7937855401410307399
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_36
+  - first:
+      213: -2555070675479374605
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_37
+  - first:
+      213: 7399918455565334005
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_38
+  - first:
+      213: 7964731297376704690
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_39
+  - first:
+      213: -2356434568418089098
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_40
+  - first:
+      213: 1906384788998469647
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_41
+  - first:
+      213: 4066417569139670506
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_42
+  - first:
+      213: 372392865547954191
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_43
+  - first:
+      213: -7526482311211729159
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_44
+  - first:
+      213: -8864338920169851568
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_45
+  - first:
+      213: 5833710088267250501
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_46
+  - first:
+      213: 854539220469890720
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_47
+  - first:
+      213: 1999740971043895463
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_48
+  - first:
+      213: -7731235085033753312
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_49
+  - first:
+      213: -3288983746564517045
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_50
+  - first:
+      213: -4921990457110911565
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_51
+  - first:
+      213: -3314692375507235855
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_52
+  - first:
+      213: 4511694939709719789
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_53
+  - first:
+      213: -114378845678516578
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_54
+  - first:
+      213: -3910878756181224285
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_55
+  - first:
+      213: 4172423014255945577
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_56
+  - first:
+      213: -5170488434130149999
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_57
+  - first:
+      213: -2858657904900219946
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_58
+  - first:
+      213: -813605223042407516
+    second: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 333
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f27880f72a8b1bd0800000000000000
+      internalID: -2658379250888314128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 335
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b82cbedbe8d4a14099c8712e64833cb
+      internalID: -1548936008448970721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7fddf9c43f2fbb2468b24756005541d3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":612.0,"y":408.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_0: -2658379250888314128
+      e337bc62-ae50-4e7f-accf-0696dcc67f65-removebg-preview_1: -1548936008448970721
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

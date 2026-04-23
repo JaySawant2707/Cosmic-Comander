@@ -2,10 +2,13 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float speed = 15f;
-    public float lifeTime = 3f;
+    [SerializeField] float speed = 15f;
+    [SerializeField] float lifeTime = 3f;
     [Header("VFX")]
     [SerializeField] GameObject explosionPrefab;
+
+    [SerializeField] private bool destroyWhenOutOfView = false;
+    [SerializeField] LayerMask damageableLayers;
 
     private int direction = 1;
     private GameObject owner;
@@ -33,13 +36,17 @@ public class Bullet : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector2.right * direction * speed * Time.deltaTime);
+        transform.Translate(Vector2.right * (direction * speed * Time.deltaTime));
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         // Ignore self (owner)
         if (collision.gameObject == owner)
+            return;
+
+        // Check if the collision is with a damageable object
+        if (((1 << collision.gameObject.layer) & damageableLayers) == 0)
             return;
 
         var damageable = collision.GetComponent<IDamageable>();
@@ -50,6 +57,13 @@ public class Bullet : MonoBehaviour
         {
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
         }
+
+        Destroy(gameObject);
+    }
+
+    private void OnBecameInvisible()
+    {
+        if (!destroyWhenOutOfView) return;
 
         Destroy(gameObject);
     }

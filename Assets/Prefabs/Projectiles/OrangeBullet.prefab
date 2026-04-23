@@ -175,6 +175,10 @@ MonoBehaviour:
   speed: 15
   lifeTime: 3
   explosionPrefab: {fileID: 1061972201138761914, guid: a8191120e12adc74db8ae12e64f0b9f7, type: 3}
+  destroyWhenOutOfView: 0
+  damageableLayers:
+    serializedVersion: 2
+    m_Bits: 1023
 --- !u!70 &-8498036063500771743
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

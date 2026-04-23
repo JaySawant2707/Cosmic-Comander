@@ -1,6 +1,3 @@
-using JetBrains.Annotations;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -8,18 +5,12 @@ using UnityEngine.UI;
 
 public class SelectLevels : MonoBehaviour
 {
-    AudioManager audioManager;
-
     public Button[] buttons;
     public GameObject AllLevels;
 
     private void Start()
     {
-
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
-
-        audioManager.Music.clip = audioManager.MMbackground;
-        audioManager.Music.Play();
+       // AudioManager.instance.PlayMusic("LevelTheme");
     }
     private void Awake()
     {
@@ -37,11 +28,8 @@ public class SelectLevels : MonoBehaviour
 
     public void OpenLevel(int levelID)
     {
-
         string levelName = "Level" + levelID;
         SceneManager.LoadSceneAsync(levelName);
-        
-
     }
 
     public void ButtonsToArray()

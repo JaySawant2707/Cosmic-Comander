@@ -69,7 +69,7 @@ MonoBehaviour:
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
     m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0.50454545, y: 0.9727273, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -168,12 +168,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -7860112538660826689, guid: 441de94616bd8f44db1adf83aae2588b, type: 3}
+  m_Sprite: {fileID: -1645341997229320943, guid: 83d3c0e8bc3abea4a99009d3e9ac9343, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.33, y: 6.42}
+  m_Size: {x: 3.35, y: 6.46}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -216,8 +216,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.0090909, y: 1.9454546}
-    newSize: {x: 3.33, y: 6.42}
+    oldSize: {x: 1.0215385, y: 1.9784615}
+    newSize: {x: 3.35, y: 6.46}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -238,6 +238,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RescueAgent
   doorToOpen: {fileID: 0}
   agentVisual: {fileID: 0}
-  brokenPodSprite: {fileID: -2839821975544539351, guid: 441de94616bd8f44db1adf83aae2588b, type: 3}
+  brokenPodSprite: {fileID: 7252724738272083935, guid: 83d3c0e8bc3abea4a99009d3e9ac9343, type: 3}
   fadeDuration: 1
   health: 4

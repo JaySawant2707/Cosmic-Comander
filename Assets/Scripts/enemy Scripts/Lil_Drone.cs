@@ -14,7 +14,6 @@ public class Lil_Drone : MonoBehaviour
     Animator animator;
     Rigidbody2D rb;
     PlayerDeath PD;
-    AudioManager audioManager;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +22,6 @@ public class Lil_Drone : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         PD = player.GetComponent<PlayerDeath>();
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -77,7 +75,7 @@ public class Lil_Drone : MonoBehaviour
 
     IEnumerator DroneExplosion()
     {
-        audioManager.PlaySFX(audioManager.Blast);
+        AudioManager.instance.PlaySFX("Blast");
         animator.SetBool("Exploded", true);
         yield return new WaitForSeconds(0.5f);
         if (distanceFromPlayer < blastRange)

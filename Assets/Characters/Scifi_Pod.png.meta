@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 441de94616bd8f44db1adf83aae2588b
+guid: 83d3c0e8bc3abea4a99009d3e9ac9343
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6074200583802953676
-    second: Gemini_Generated_Image_1b73651b73651b73_0
+      213: 5251578310061752359
+    second: Scifi_Pod_0
   - first:
-      213: -2839821975544539351
-    second: Gemini_Generated_Image_1b73651b73651b73_1
+      213: 7252724738272083935
+    second: Scifi_Pod_1
   - first:
-      213: -7860112538660826689
-    second: Gemini_Generated_Image_1b73651b73651b73_2
+      213: -1645341997229320943
+    second: Scifi_Pod_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 330
+  spritePixelsToUnits: 325
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -119,12 +119,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gemini_Generated_Image_1b73651b73651b73_1
+      name: Scifi_Pod_1
       rect:
         serializedVersion: 2
-        x: 260
-        y: 779
-        width: 406
+        x: 261
+        y: 778
+        width: 407
         height: 641
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 927d15295fce698d0800000000000000
-      internalID: -2839821975544539351
+      spriteID: fdf356e09bad6a460800000000000000
+      internalID: 7252724738272083935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gemini_Generated_Image_1b73651b73651b73_2
+      name: Scifi_Pod_2
       rect:
         serializedVersion: 2
         x: 51
-        y: 66
-        width: 333
-        height: 642
+        y: 65
+        width: 332
+        height: 643
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,8 +156,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fb1178e6a454be290800000000000000
-      internalID: -7860112538660826689
+      spriteID: 1155d11cb229a29e0800000000000000
+      internalID: -1645341997229320943
       vertices: []
       indices: 
       edges: []
@@ -166,7 +166,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b3d7beacefe16684585e9aefd786fc84
+    spriteID: 2020c4da2fd555f4a8d3f8e67586f04f
     internalID: 0
     vertices: []
     indices: 
@@ -176,9 +176,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Gemini_Generated_Image_1b73651b73651b73_0: -6074200583802953676
-      Gemini_Generated_Image_1b73651b73651b73_1: -2839821975544539351
-      Gemini_Generated_Image_1b73651b73651b73_2: -7860112538660826689
+      Scifi_Pod_0: 5251578310061752359
+      Scifi_Pod_1: 7252724738272083935
+      Scifi_Pod_2: -1645341997229320943
+      Scifi_Pod_3: 1895713407
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

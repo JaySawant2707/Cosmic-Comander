@@ -11,7 +11,6 @@ public class droneSpawner : MonoBehaviour
     private bool canSpawnDrones;
     private float nextFireTime;
     private Transform player;
-    AudioManager audioManager;
     Animator animator;
 
     // Start is called before the first frame update
@@ -19,7 +18,6 @@ public class droneSpawner : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         animator = GetComponent<Animator>();
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -30,7 +28,7 @@ public class droneSpawner : MonoBehaviour
         if (distanceFromPlayer < DRange && nextFireTime < Time.time && canSpawnDrones)
         {
             animator.SetTrigger("spawn");
-            audioManager.PlaySFX(audioManager.Shoot);
+            AudioManager.instance.PlaySFX("Shoot");
             Instantiate(drone, dronePos.transform.position, Quaternion.identity);
             nextFireTime = Time.time + fireRate;
         }
