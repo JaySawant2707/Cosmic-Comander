@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerDeath : MonoBehaviour
 {
     [SerializeField] float beforeRespawnCooldown = 0.5f;
+    [SerializeField] BossTriggerZone bossTriggerZone;
     PlayerAnimationController anim;
     PlayerController playerController;
     PlayerHealth playerHealth;
@@ -70,5 +71,11 @@ public class PlayerDeath : MonoBehaviour
         transform.position = checkPointPos;
         anim.PlayRespawn();
         rb.simulated = true;
+        playerHealth.UpdateUI();
+
+        if (bossTriggerZone != null)
+        {
+            bossTriggerZone.ResetTrigger();
+        }
     }
 }

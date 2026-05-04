@@ -9,8 +9,7 @@ public class HeartPickup : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
 
-        PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
-        if (playerHealth == null) return;
+        if (!other.TryGetComponent<PlayerHealth>(out var playerHealth)) return;
 
         // Only pickup if not full health
         if (playerHealth.CanHeal())

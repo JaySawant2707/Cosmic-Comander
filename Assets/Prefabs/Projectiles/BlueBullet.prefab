@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8505092493470830738}
   - component: {fileID: 5751528924309403614}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Spot Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 5260108926979767996}
   - component: {fileID: 1148087257245312733}
   - component: {fileID: 4383090127153341926}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BlueBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -219,7 +219,7 @@ MonoBehaviour:
   destroyWhenOutOfView: 1
   damageableLayers:
     serializedVersion: 2
-    m_Bits: 511
+    m_Bits: 2504
 --- !u!70 &4383090127153341926
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

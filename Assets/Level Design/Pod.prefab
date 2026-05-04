@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 8110477843770450420}
   - component: {fileID: 7633327005412531124}
   - component: {fileID: 7289243812963522416}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pod
   m_TagString: Untagged
   m_Icon: {fileID: 0}

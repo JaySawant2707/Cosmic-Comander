@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public class checkPoint : MonoBehaviour
 {
+    private static readonly int ActiveHash = Animator.StringToHash("active");
     public GameObject respawn;
     Animator animator;
     PlayerDeath PD;
@@ -24,7 +26,7 @@ public class checkPoint : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            animator.SetBool("active", true);
+            animator.SetBool(ActiveHash, true);
             PD.UpdateCheckpoint(respawn.transform.position);
         }
     }

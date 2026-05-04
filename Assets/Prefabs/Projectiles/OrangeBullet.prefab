@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6546954968375212161}
   - component: {fileID: 8699801689967683934}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Spot Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,6 +96,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OrangeBullet
       objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: a91edc0a979add149b521f61ca624f6b, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a91edc0a979add149b521f61ca624f6b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 49.43029
@@ -178,7 +182,7 @@ MonoBehaviour:
   destroyWhenOutOfView: 0
   damageableLayers:
     serializedVersion: 2
-    m_Bits: 1023
+    m_Bits: 2944
 --- !u!70 &-8498036063500771743
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

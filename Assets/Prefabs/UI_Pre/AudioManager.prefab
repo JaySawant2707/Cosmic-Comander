@@ -1,134 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5702985060997067424
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2709682454559050596}
-  - component: {fileID: 1859677235292308732}
-  m_Layer: 0
-  m_Name: SFX
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2709682454559050596
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5702985060997067424}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5140864759815325664}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1859677235292308732
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5702985060997067424}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 5805472484686451159, guid: 4f83cdad052014f4183770680fa0a07d, type: 2}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &7992437001696657377
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,13 +41,13 @@ AudioSource:
   m_GameObject: {fileID: 7992437001696657377}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 3064066922516570950, guid: 4f83cdad052014f4183770680fa0a07d, type: 2}
+  OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: ba33bf6d809cecc48aef9960da21c659, type: 3}
-  m_PlayOnAwake: 1
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -289,7 +160,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4896437708761796067}
-  - {fileID: 2709682454559050596}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8055668422662401391
@@ -304,15 +174,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aecbe1eea1c0bd043a6b4c02e44c12fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Music: {fileID: 8068579187367693868}
-  SFX: {fileID: 1859677235292308732}
-  MMbackground: {fileID: 8300000, guid: f5d045831f5bc1046b993545a73fe2f4, type: 3}
-  Lvbackground: {fileID: 8300000, guid: 166dacc5ebab34d45b1d0fa3f26a7d58, type: 3}
-  Button: {fileID: 8300000, guid: e9a09d9a0b2bf9343a6be7004cd614e2, type: 3}
-  DoorOpen: {fileID: 8300000, guid: 0878dbdf9d71156419a5d73cc4483558, type: 3}
-  Shoot: {fileID: 8300000, guid: 21189661bf4e1b943ab5765d8c886955, type: 3}
-  Death: {fileID: 8300000, guid: a9caaae6936b23442b18cf107feb74bf, type: 3}
-  laserShoot: {fileID: 8300000, guid: 1fc94537bb10c8446b877ad111ca81d2, type: 3}
-  Slash: {fileID: 8300000, guid: 51ad590d47938bc41a37fa581c996c5c, type: 3}
-  CoinCollect: {fileID: 8300000, guid: 54e5af89a475fb24db03daaf0768b237, type: 3}
-  Blast: {fileID: 8300000, guid: c9d9b41839d8de840b18479333a6b6d6, type: 3}
+  musicSource: {fileID: 8068579187367693868}
+  poolSize: 10
+  sounds:
+  - name: LevelTheme
+    clip: {fileID: 8300000, guid: ba33bf6d809cecc48aef9960da21c659, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+  - name: MainMenuTheme
+    clip: {fileID: 8300000, guid: f5d045831f5bc1046b993545a73fe2f4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+  - name: PlayerShoot
+    clip: {fileID: 8300000, guid: e41d5bbb7b74e8f45adc8b7d5611280e, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: EnemyShoot
+    clip: {fileID: 8300000, guid: a3312dea273a53b4f8e7ecb93b7fb967, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: Pickup
+    clip: {fileID: 8300000, guid: 54e5af89a475fb24db03daaf0768b237, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: LaserCharge
+    clip: {fileID: 8300000, guid: 311de5fbeab56d043976c8b9ad18a7d5, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: LaserFire
+    clip: {fileID: 8300000, guid: ccc9f5a3bcf437f45ac38028e45ba483, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: AstraSpawn
+    clip: {fileID: 8300000, guid: dabc47c607f03154692a2e00935924b4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  masterVolume: 1
+  sfxVolume: 1
+  musicVolume: 1

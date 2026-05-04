@@ -73,8 +73,6 @@ public class PlayerAnimationController : MonoBehaviour
     void ResetAllTriggers()
     {
         animator.ResetTrigger("Jump");
-        animator.ResetTrigger("Slash");
-        animator.ResetTrigger("Shoot");
         animator.ResetTrigger("Hurt");
         animator.ResetTrigger("Death");
         animator.ResetTrigger("Respawned");

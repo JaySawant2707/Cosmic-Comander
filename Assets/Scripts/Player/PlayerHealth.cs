@@ -84,7 +84,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         currentHealth = maxHealth;
     }
 
-    private void UpdateUI()
+    public void UpdateUI()
     {
         if (healthSlider != null)
         {

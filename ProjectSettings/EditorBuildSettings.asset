@@ -14,14 +14,20 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/All_Levels.unity
     guid: 0000bc36cce28b7448aaee139c73f6ec
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Remake/Level0.unity
     guid: ce67a9673316c694ca8e6e7d22510d64
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Remake/Level1.unity
     guid: 05820a7edd12146408030c5b97cf2d8c
   - enabled: 1
     path: Assets/Scenes/Remake/Chapter1.unity
     guid: 8441e3cf1c6b314439d2d327e761d159
+  - enabled: 1
+    path: Assets/Scenes/Remake/Chapter2.unity
+    guid: 4e6037ccceef81f41a44591e3a663209
+  - enabled: 1
+    path: Assets/Scenes/Remake/Chapter3.unity
+    guid: 9dcf913df289a444ebf1d8d58fed2c17
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

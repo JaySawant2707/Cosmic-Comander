@@ -8,6 +8,7 @@ public class FinalDoor : MonoBehaviour
 {
     [SerializeField] Transform agentSpawnPoint;
     [SerializeField] float delayBeforeLoad = 0.2f;
+    [SerializeField] int currentChapterIndex = 1;
 
     Collider2D col;
     Animator anim;
@@ -32,6 +33,7 @@ public class FinalDoor : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            ChapterManager.instance.UnlockNextChapter(currentChapterIndex);
             StartCoroutine(OpenNextLevel());
         }
     }
